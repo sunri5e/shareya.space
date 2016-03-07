@@ -5,48 +5,127 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
   <title></title>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/material-design-iconic-font/2.2.0/css/material-design-iconic-font.min.css">
   <link rel="stylesheet" href="css/bootstrap.css">
   <link rel="stylesheet" href="css/main.css">
 </head>
 
 <body>
 
-  <div class="cw-login">
-    <div class="cw-login--header">
-      <img src="img/logo-big.png" alt="Logo">
-    </div>
-    <div class="cw-login--body">
-      <form>
-        <div class="form-group">
-          <input type="email" class="form-control cw-form_control" placeholder="Email">
-        </div>
-        <div class="form-group">
-          <input type="password" class="form-control cw-form_control" placeholder="Password">
-        </div>
-        <div class="form-group">
-          <div class="row">
-            <div class="col-xs-6">
-              <div class="cw-checkbox">
-                <input id="rememberMe" type="checkbox">
-                <label for="rememberMe">
-                  <span class="cw-checkbox-indicator"></span>
-                  Remember me
-                </label>
-              </div>
-            </div>
-            <div class="col-xs-6 text-right">
-              <a href="#">Forgot password?</a>
-            </div>
-          </div>
-        </div>
-        <button class="btn btn-default form-control cw-btn">LOG IN</button>
-        <div class="cw-divider">
-          <div class="cw-divider--content">or</div>
-        </div>
-        <button class="form-control btn btn-default cw-btn">create account</button>
-      </form>
-    </div>
-  </div>
+  <header class="sy-header">
+    <a href="#" class="zmdi zmdi-menu sy-header-btn"></a> Avalible  places
+  </header>
+
+  <a href="#" class="sy-filter">
+    Filter by date
+    <i class="zmdi zmdi-chevron-down"></i>
+  </a>
+
+  <section>
+    <h5 class="sy-section-header">Today(2)</h5>
+    <ul class="sy-list">
+      <li class="sy-list-item">
+        <a href="#">
+          <table>
+            <tr>
+              <td class="sy-list-item--title">C_123</td>
+              <td class="sy-list-item--data">
+                <div><strong>12 days Av.</strong></div>
+                <div>(today - 17 Aug)</div>
+                <div>(21 Aug - 25 Aug)</div>
+              </td>
+              <td><i class="zmdi zmdi-chevron-right"></i></td>
+            </tr>
+          </table>
+        </a>
+      </li>
+      <li class="sy-list-item">
+        <a href="#">
+          <table>
+            <tr>
+              <td class="sy-list-item--title">C_123</td>
+              <td class="sy-list-item--data">
+                <div><strong>12 days Av.</strong></div>
+                <div>(today - 17 Aug)</div>
+              </td>
+              <td><i class="zmdi zmdi-chevron-right"></i></td>
+            </tr>
+          </table>
+        </a>
+      </li>
+    </ul>
+  </section>
+
+  <section>
+    <h5 class="sy-section-header">Tomorrow(1)</h5>
+    <ul class="sy-list">
+      <li class="sy-list-item">
+        <a href="#">
+          <table>
+            <tr>
+              <td class="sy-list-item--title">C_123</td>
+              <td class="sy-list-item--data">
+                <div><strong>12 days Av.</strong></div>
+                <div>(21 Aug - 25 Aug)</div>
+              </td>
+              <td><i class="zmdi zmdi-chevron-right"></i></td>
+            </tr>
+          </table>
+        </a>
+      </li>
+    </ul>
+  </section>
+
+  <section>
+    <h5 class="sy-section-header">11 Aug(3)</h5>
+    <ul class="sy-list">
+      <li class="sy-list-item">
+        <a href="#">
+          <table>
+            <tr>
+              <td class="sy-list-item--title">C_123</td>
+              <td class="sy-list-item--data">
+                <div><strong>12 days Av.</strong></div>
+                <div>(today - 17 Aug)</div>
+                <div>(21 Aug - 25 Aug)</div>
+                <div>(28 Aug - 30 Aug)</div>
+              </td>
+              <td><i class="zmdi zmdi-chevron-right"></i></td>
+            </tr>
+          </table>
+        </a>
+      </li>
+      <li class="sy-list-item">
+        <a href="#">
+          <table>
+            <tr>
+              <td class="sy-list-item--title">C_123</td>
+              <td class="sy-list-item--data">
+                <div><strong>12 days Av.</strong></div>
+                <div>(today - 17 Aug)</div>
+                <div>(21 Aug - 25 Aug)</div>
+              </td>
+              <td><i class="zmdi zmdi-chevron-right"></i></td>
+            </tr>
+          </table>
+        </a>
+      </li>
+      <li class="sy-list-item">
+        <a href="#">
+          <table>
+            <tr>
+              <td class="sy-list-item--title">C_123</td>
+              <td class="sy-list-item--data">
+                <div><strong>12 days Av.</strong></div>
+                <div>(today - 17 Aug)</div>
+              </td>
+              <td><i class="zmdi zmdi-chevron-right"></i></td>
+            </tr>
+          </table>
+        </a>
+      </li>
+    </ul>
+  </section>
 
   <script src="js/jquery-1.11.0.js"></script>
   <script src="js/bootstrap.min.js"></script>
