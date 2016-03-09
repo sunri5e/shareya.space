@@ -97,7 +97,132 @@ body
     -ms-transform: translate(0, -50%)
     -o-transform: translate(0, -50%)
     transform: translate(0, -50%)
-    
+  .sy-filter--triger
+    display: block
+    width: 100%
+    height: 100%
+    position: absolute
+    top: 0
+    left: 0
+    opacity: 0
+    z-index: 1
+    cursor: pointer
+.sy-filter--query
+  padding: 15px
+  position: relative
+  display: none
+  &.is-visibale
+    display: block
+  & > input
+    height: 35px
+    background-color: rgba(0,0,0,.05)
+    border-radius: 3px
+    display: block
+    width: 100%
+    border: none
+    padding: 10px 15px
+    color: rgba(0,0,0,.7)
+    font-size: 12px
+.sy-filter--clear-query
+  cursor: pointer
+  color: rgba($color-main, .7)
+  font-size: 18px
+  position: absolute
+  top: 15px
+  right: 15px
+  padding: 5px 15px
+
+
+
+.ui-datepicker
+  width: 100%
+  background-color: #FFF
+  box-shadow: 0 3px 9px rgba(24, 24, 24, 0.35)
+  padding-bottom: 20px
+  & > *
+    width: 100%
+    max-width: 250px
+    margin-left: auto
+    margin-right: auto
+.ui-datepicker-prev,
+.ui-datepicker-next
+  padding: 5px 10px
+  color: $color-accent
+  font-size: 24px
+.ui-datepicker-prev
+  float: left
+  margin-left: -10px
+.ui-datepicker-next
+  float: right
+  margin-right: -10px
+.ui-datepicker-title
+  color: rgba($color-main, .5)
+  font-size: 14px
+  text-align: center
+  line-height: 44px
+.ui-datepicker-calendar
+  th
+    font-weight: 400
+  th,
+  td
+    text-align: center
+    padding: 5px
+    & > span,
+    & > a,
+      display: inline-block
+      width: 40px
+      height: 40px
+      line-height: 40px
+      vertical-align: middle
+      color: rgba($color-main, .5)
+      font-size: 12px
+      &.ui-state-highlight
+        border-radius: 20px
+        background-color: $color-accent
+        color: #fff
+        font-weight: 700
+.ui-datepicker-week-end
+  display: none
+
+
+
+.sy-overlay
+  position: fixed
+  width: 100%
+  height: 100%
+  top: 0
+  left: 0
+  background-color: rgba($color-main, .8)
+  opacity: 0
+  pointer-events: none
+  transition: opacity .3s
+  &.is-opened
+    opacity: 1
+    pointer-events: default
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 

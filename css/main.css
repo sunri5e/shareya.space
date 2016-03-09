@@ -90,3 +90,106 @@ body {
     -webkit-transform: translate(0, -50%);
     -ms-transform: translate(0, -50%);
     transform: translate(0, -50%); }
+  .sy-filter .sy-filter--triger {
+    display: block;
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    opacity: 0;
+    z-index: 1;
+    cursor: pointer; }
+
+.sy-filter--query {
+  padding: 15px;
+  position: relative;
+  display: none; }
+  .sy-filter--query.is-visibale {
+    display: block; }
+  .sy-filter--query > input {
+    height: 35px;
+    background-color: rgba(0, 0, 0, 0.05);
+    border-radius: 3px;
+    display: block;
+    width: 100%;
+    border: none;
+    padding: 10px 15px;
+    color: rgba(0, 0, 0, 0.7);
+    font-size: 12px; }
+
+.sy-filter--clear-query {
+  cursor: pointer;
+  color: rgba(0, 0, 0, 0.7);
+  font-size: 18px;
+  position: absolute;
+  top: 15px;
+  right: 15px;
+  padding: 5px 15px; }
+
+.ui-datepicker {
+  width: 100%;
+  background-color: #FFF;
+  box-shadow: 0 3px 9px rgba(24, 24, 24, 0.35);
+  padding-bottom: 20px; }
+  .ui-datepicker > * {
+    width: 100%;
+    max-width: 250px;
+    margin-left: auto;
+    margin-right: auto; }
+
+.ui-datepicker-prev, .ui-datepicker-next {
+  padding: 5px 10px;
+  color: #25CB82;
+  font-size: 24px; }
+
+.ui-datepicker-prev {
+  float: left;
+  margin-left: -10px; }
+
+.ui-datepicker-next {
+  float: right;
+  margin-right: -10px; }
+
+.ui-datepicker-title {
+  color: rgba(0, 0, 0, 0.5);
+  font-size: 14px;
+  text-align: center;
+  line-height: 44px; }
+
+.ui-datepicker-calendar th {
+  font-weight: 400; }
+.ui-datepicker-calendar th, .ui-datepicker-calendar td {
+  text-align: center;
+  padding: 5px; }
+  .ui-datepicker-calendar th > span, .ui-datepicker-calendar th > a, .ui-datepicker-calendar td > span, .ui-datepicker-calendar td > a {
+    display: inline-block;
+    width: 40px;
+    height: 40px;
+    line-height: 40px;
+    vertical-align: middle;
+    color: rgba(0, 0, 0, 0.5);
+    font-size: 12px; }
+    .ui-datepicker-calendar th > span.ui-state-highlight, .ui-datepicker-calendar th > a.ui-state-highlight, .ui-datepicker-calendar td > span.ui-state-highlight, .ui-datepicker-calendar td > a.ui-state-highlight {
+      border-radius: 20px;
+      background-color: #25CB82;
+      color: #fff;
+      font-weight: 700; }
+
+.ui-datepicker-week-end {
+  display: none; }
+
+.sy-overlay {
+  position: fixed;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+  background-color: rgba(0, 0, 0, 0.8);
+  opacity: 0;
+  pointer-events: none;
+  -webkit-transition: opacity 0.3s;
+          transition: opacity 0.3s; }
+  .sy-overlay.is-opened {
+    opacity: 1;
+    pointer-events: default; }

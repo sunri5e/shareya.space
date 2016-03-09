@@ -13,15 +13,22 @@
 <body>
 
   <header class="sy-header">
-    <a href="#" class="zmdi zmdi-menu sy-header-btn"></a> Avalible  places
+    <a href="#" class="zmdi zmdi-menu sy-header-btn"></a> Avalible places
   </header>
 
   <a href="#" class="sy-filter">
     Filter by date
     <i class="zmdi zmdi-chevron-down"></i>
+    <input type="text" id="datepicker" class="sy-filter--triger">
   </a>
+  <div class="sy-filter--query">
+    <input type="text" id="alternate">
+    <span class="sy-filter--clear-query">
+      <i class="zmdi zmdi-close"></i>
+    </span>
+  </div>
 
-  <section>
+  <section class="sy-av-section" data-available="12" data-day="2016-03-01">
     <h5 class="sy-section-header">Today(2)</h5>
     <ul class="sy-list">
       <li class="sy-list-item">
@@ -30,7 +37,7 @@
             <tr>
               <td class="sy-list-item--title">C_123</td>
               <td class="sy-list-item--data">
-                <div><strong>12 days Av.</strong></div>
+                <div><strong>12 days available.</strong></div>
                 <div>(today - 17 Aug)</div>
                 <div>(21 Aug - 25 Aug)</div>
               </td>
@@ -45,7 +52,7 @@
             <tr>
               <td class="sy-list-item--title">C_123</td>
               <td class="sy-list-item--data">
-                <div><strong>12 days Av.</strong></div>
+                <div><strong>12 days available.</strong></div>
                 <div>(today - 17 Aug)</div>
               </td>
               <td><i class="zmdi zmdi-chevron-right"></i></td>
@@ -56,7 +63,7 @@
     </ul>
   </section>
 
-  <section>
+  <section class="sy-av-section" data-available="1" data-day="2016-03-02">
     <h5 class="sy-section-header">Tomorrow(1)</h5>
     <ul class="sy-list">
       <li class="sy-list-item">
@@ -65,7 +72,7 @@
             <tr>
               <td class="sy-list-item--title">C_123</td>
               <td class="sy-list-item--data">
-                <div><strong>12 days Av.</strong></div>
+                <div><strong>1 days available.</strong></div>
                 <div>(21 Aug - 25 Aug)</div>
               </td>
               <td><i class="zmdi zmdi-chevron-right"></i></td>
@@ -76,7 +83,7 @@
     </ul>
   </section>
 
-  <section>
+  <section class="sy-av-section" data-available="30" data-day="2016-03-03">
     <h5 class="sy-section-header">11 Aug(3)</h5>
     <ul class="sy-list">
       <li class="sy-list-item">
@@ -85,7 +92,7 @@
             <tr>
               <td class="sy-list-item--title">C_123</td>
               <td class="sy-list-item--data">
-                <div><strong>12 days Av.</strong></div>
+                <div><strong>30 days available.</strong></div>
                 <div>(today - 17 Aug)</div>
                 <div>(21 Aug - 25 Aug)</div>
                 <div>(28 Aug - 30 Aug)</div>
@@ -101,7 +108,7 @@
             <tr>
               <td class="sy-list-item--title">C_123</td>
               <td class="sy-list-item--data">
-                <div><strong>12 days Av.</strong></div>
+                <div><strong>12 days available.</strong></div>
                 <div>(today - 17 Aug)</div>
                 <div>(21 Aug - 25 Aug)</div>
               </td>
@@ -116,7 +123,7 @@
             <tr>
               <td class="sy-list-item--title">C_123</td>
               <td class="sy-list-item--data">
-                <div><strong>12 days Av.</strong></div>
+                <div><strong>12 days available.</strong></div>
                 <div>(today - 17 Aug)</div>
               </td>
               <td><i class="zmdi zmdi-chevron-right"></i></td>
@@ -127,7 +134,10 @@
     </ul>
   </section>
 
+  <div class="sy-overlay"></div>
+
   <script src="js/jquery-1.11.0.js"></script>
+  <script src="//code.jquery.com/ui/1.11.4/jquery-ui.js"></script>
   <script src="js/bootstrap.min.js"></script>
   <script src="js/main.js"></script>
 </body>
