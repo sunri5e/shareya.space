@@ -26,6 +26,15 @@ body {
   display: inline-block;
   color: #FFF; }
 
+.sy-container {
+  padding-left: 10px;
+  padding-right: 10px; }
+
+.sy-title {
+  padding: 15px 0;
+  color: rgba(0, 0, 0, 0.5);
+  font-size: 12px; }
+
 .sy-section-header {
   color: rgba(0, 0, 0, 0.5);
   font-weight: 400;
@@ -132,6 +141,8 @@ body {
   background-color: #FFF;
   box-shadow: 0 3px 9px rgba(24, 24, 24, 0.35);
   padding-bottom: 20px; }
+  .ui-datepicker:last-child {
+    display: none; }
   .ui-datepicker > * {
     width: 100%;
     max-width: 250px;
@@ -179,6 +190,16 @@ body {
 .ui-datepicker-week-end {
   display: none; }
 
+.sy-calendar .ui-state-highlight > span, .sy-calendar .ui-state-highlight > a {
+  border-radius: 20px;
+  background-color: #25CB82;
+  color: #fff;
+  font-weight: 700; }
+  .sy-calendar .ui-state-highlight > span.ui-state-highlight, .sy-calendar .ui-state-highlight > a.ui-state-highlight {
+    background: transparent;
+    border: 1px solid #25CB82;
+    color: rgba(0, 0, 0, 0.5); }
+
 .sy-overlay {
   position: fixed;
   width: 100%;
@@ -193,3 +214,17 @@ body {
   .sy-overlay.is-opened {
     opacity: 1;
     pointer-events: default; }
+
+.sy-btn {
+  display: inline-block;
+  background: #25CB82;
+  color: #FFF;
+  font-size: 12px;
+  font-weight: 700;
+  padding: 10px;
+  -webkit-transition: background 0.3s;
+          transition: background 0.3s; }
+  .sy-btn:hover {
+    text-decoration: none;
+    background: #39db94;
+    color: #fff; }

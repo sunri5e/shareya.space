@@ -34,4 +34,9 @@ $(document).ready(function() {
   	$("#datepicker").datepicker( "setDate", "" );
   	showAllDays();
   });
+
+  $('#sharing-calendar').multiDatesPicker({
+  	prevText: '<i class="zmdi zmdi-chevron-left"></i>',
+    nextText: '<i class="zmdi zmdi-chevron-right"></i>'
+  });
 });
