@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+  <title></title>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/material-design-iconic-font/2.2.0/css/material-design-iconic-font.min.css">
+  <link rel="stylesheet" href="css/bootstrap.css">
+  <link rel="stylesheet" href="css/main.css">
+</head>
+
+<body>
+
+  <header class="sy-header">
+    <a href="#" class="zmdi zmdi-menu sy-header-btn"></a> Share my place
+  </header>
+  
+  <div class="sy-container">
+    <div class="sy-title">Share for most featured period:</div>
+    <div class="sy-multiselect">
+      <div class="sy-multiselect-header">
+        <div class="sy-multiselect-item">
+          <div class="sy-multiselect-item--title">Select All</div>
+        </div>
+      </div>
+      <ul class="sy-multiselect-body">
+        <li class="sy-multiselect-item">
+          <input type="checkbox" id="aug1">
+          <label for="aug1">
+            <span class="sy-table-cell">
+              <div class="sy-multiselect-item--title">1 Aug <span class="sy-multiselect-item--subtitle">Mon</span></div>
+            </span>
+          </label>
+        </li>
+        <li class="sy-multiselect-item">
+          <input type="checkbox" id="aug2">
+          <label for="aug2">
+            <span class="sy-table-cell">
+              <div class="sy-multiselect-item--title">2 Aug <span class="sy-multiselect-item--subtitle">Tue</span></div>
+            </span>
+          </label>
+        </li>
+        <li class="sy-multiselect-item">
+          <input type="checkbox" id="aug3">
+          <label for="aug3">
+            <span class="sy-table-cell">
+              <div class="sy-multiselect-item--title">3 Aug <span class="sy-multiselect-item--subtitle">Wed</span></div>
+            </span>
+          </label>
+        </li>
+        <li class="sy-multiselect-item is-already-booked">
+          <input type="checkbox" id="aug4">
+          <label for="aug4">
+            <span class="sy-table-cell">
+              <div class="sy-multiselect-item--title">4 Aug <span class="sy-multiselect-item--subtitle">Thu</span></div>
+              <span class="sy-help">You’ve already booked A_123 on this date</span>
+            </span>
+          </label>
+        </li>
+      </ul>
+    </div>
+  </div>
+
+  <footer class="sy-footer">
+    <a href="#" class="sy-btn is-block is-huge"><i class="zmdi zmdi-bookmark-outline"></i> Book</a>
+  </footer>
+
+  <div class="sy-overlay">
+    <div class="sy-modal">
+      <div class="sy-modal-body">
+        You’ve already booked other parking place on 21 Aug. Would you like to rebook with current place?
+      </div>
+      <div class="sy-modal-footer sy-text-right sy-reset-pt sy-reset-pb">
+        <a href="#" class="sy-btn is-transparent sy-overlay-close">Skip this date</a>
+        <a href="#" class="sy-btn is-transparent is-primary">Rebook</a>
+      </div>
+    </div>
+  </div>
+
+  <script src="js/jquery-1.11.0.js"></script>
+  <script src="//code.jquery.com/ui/1.11.4/jquery-ui.js"></script>
+  <script src="http://multidatespickr.sourceforge.net/jquery-ui.multidatespicker.js"></script>
+  <script src="js/bootstrap.min.js"></script>
+  <script src="js/main.js"></script>
+</body>
+
+</html>

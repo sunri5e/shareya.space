@@ -1,5 +1,6 @@
 $color-main: #000
 $color-accent: #25CB82
+$color-alert: #F3A715
 
 body
   font-family: 'Roboto Mono'
@@ -8,6 +9,10 @@ body
   color: rgba($color-main, .5)
   font-size: 11px
   font-weight: 400
+  &.with-header
+    padding-top: 48px
+  &.with-footer
+    padding-bottom: 68px
 
 .sy-header
   background-color: $color-accent
@@ -17,8 +22,11 @@ body
   font-weight: 400
   height: 48px
   line-height: 48px
-  position: relative
+  position: fixed
   z-index: 2
+  width: 100%
+  top: 0
+  left: 0
 .sy-header-btn
   font-size: 18px
   padding: 10px 15px
@@ -29,6 +37,18 @@ body
 
 
 
+.sy-reset-pt
+  padding-top: 0 !important
+.sy-reset-pb
+  padding-bottom: 0 !important
+
+
+
+.sy-text-right
+  text-align: right
+
+
+
 .sy-container
   padding-left: 10px
   padding-right: 10px
@@ -36,6 +56,9 @@ body
   padding: 15px 0
   color: rgba($color-main, .5)
   font-size: 12px
+.sy-help
+  color: rgba($color-main, .5)
+  font-size: 10px
 
 
 
@@ -222,7 +245,7 @@ body
   transition: opacity .3s
   &.is-opened
     opacity: 1
-    pointer-events: default
+    pointer-events: auto
 
 
 
@@ -234,14 +257,112 @@ body
   font-weight: 700
   padding: 10px
   transition: background .3s
+  text-align: center
   &:hover
     text-decoration: none
     background: lighten($color-accent, 7%)
     color: #fff
+  &.is-transparent
+    background: transparent
+    color: rgba($color-main, .7)
+    font-weight: 400
+    &.is-primary
+      color: $color-accent
+  &.is-block
+    display: block
+    width: 100%
+  &.is-huge
+    font-size: 14px
+    font-weight: 400
+    padding: 12px 15px
+    border-radius: 3px
+    line-height: 24px
+    height: 48px
+    .zmdi
+      font-size: 24px
+      vertical-align: middle
+      margin-top: -3px
 
 
 
+.sy-multiselect-item
+  input[type="checkbox"]
+    display: none
+    &:checked + label
+      background: rgba($color-accent, .3)
+      &:before
+        content: '\f269'
+  label
+    padding: 15px
+    background: #fff
+    display: table
+    width: 100%
+    & > *
+      display: table-cell
+      vertical-align: middle
+      padding: 0 5px
+      &:last-child
+        width: 100%
+    &:before
+      display: table-cell
+      vertical-align: middle
+      padding-right: 10px
+      font-family: 'Material-Design-Iconic-Font'
+      font-size: 24px
+      text-rendering: auto
+      -webkit-font-smoothing: antialiased
+      -moz-osx-font-smoothing: grayscale
+      content: '\f26c'
+      color: $color-accent
+  & + &
+    margin-top: 10px
+  &.is-already-booked
+    label
+      background: rgba($color-alert, .2)
+      &:before
+        color: $color-alert
+        content: '\f1f1'
+.sy-multiselect-body
+  margin: 10px 0 0
+  padding: 0
+  list-style-type: none
+.sy-multiselect-item--title
+  color: rgba($color-main, .7)
+  font-size: 14px
+  font-weight: 700
+  white-space: nowrap
+.sy-multiselect-item--subtitle
+  color: rgba($color-main, .5)
+  font-size: 12px
+  font-weight: 400
 
+
+
+.sy-modal
+  position: fixed
+  top: 50%
+  left: 50%
+  width: 300px
+  transform: translate(-50%, -50%)
+  background-color: #FFF
+  box-shadow: 0 3px 9px rgba(24, 24, 24, 0.35)
+.sy-modal-body,
+.sy-modal-footer
+  padding: 10px
+.sy-modal-body
+  font-size: 12px
+
+
+
+.sy-footer
+  height: 68px
+  background-color: #FFF
+  box-shadow: 0 -2px 6px rgba(24, 24, 24, 0.35)
+  position: fixed
+  width: 100%
+  left: 0
+  bottom: 0
+  padding: 10px
 
 
 
