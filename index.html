@@ -13,8 +13,27 @@
 <body>
 
   <header class="sy-header">
-    <a href="#" class="zmdi zmdi-menu sy-header-btn"></a> Avalible places
+    <a href="#" class="zmdi zmdi-menu sy-header-btn sy-menu-toogle"></a> Avalible places
   </header>
+
+  <div class="sy-sidebar">
+    <div class="sy-sidebar--header">
+      <div class="sy-table">
+        <div class="sy-table-cell">
+          <img src="img/user-avatar.png" width="50" alt="User logo">
+        </div>
+        <div class="sy-table-cell" style="padding-left: 15px;">Oleksandr Hladyshchuk</div>
+      </div>
+    </div>
+    <ul class="sy-sidebar--nav">
+      <li><a href="#"><i class="zmdi zmdi-search"></i> Find avalible places</a></li>
+      <li class="active"><a href="#"><i class="zmdi zmdi-bookmark"></i> Places I booked</a></li>
+      <li><a href="#"><i class="zmdi zmdi-time"></i> My history</a></li>
+    </ul>
+    <ul class="sy-sidebar--nav">
+      <li><a href="#">Sign out</a></li>
+    </ul>
+  </div>
 
   <a href="#" class="sy-filter">
     Filter by date
@@ -26,17 +45,6 @@
     <span class="sy-filter--clear-query">
       <i class="zmdi zmdi-close"></i>
     </span>
-  </div>
-  <div class="sy-sidebar">
-    <div class="sy-sidebar--header"></div>
-    <ul class="sy-sidebar--nav">
-      <li><a href="#"><i class="zmdi zmdi-search"></i> Find avalible places</a></li>
-      <li><a href="#"><i class="zmdi zmdi-bookmark"></i> Places I booked</a></li>
-      <li><a href="#"><i class="zmdi zmdi-time"></i> My history</a></li>
-    </ul>
-    <ul class="sy-sidebar--nav">
-      <li><a href="#"><i class="zmdi zmdi-search"></i> Sign out</a></li>
-    </ul>
   </div>
 
   <section class="sy-av-section" data-available="12" data-day="2016-03-01">

@@ -13,8 +13,27 @@
 <body>
 
   <header class="sy-header">
-    <a href="#" class="zmdi zmdi-menu sy-header-btn"></a> Share my place
+    <a href="#" class="zmdi zmdi-menu sy-header-btn sy-menu-toogle"></a> Share my place
   </header>
+
+  <div class="sy-sidebar">
+    <div class="sy-sidebar--header">
+      <div class="sy-table">
+        <div class="sy-table-cell">
+          <img src="img/user-avatar.png" width="50" alt="User logo">
+        </div>
+        <div class="sy-table-cell" style="padding-left: 15px;">Oleksandr Hladyshchuk</div>
+      </div>
+    </div>
+    <ul class="sy-sidebar--nav">
+      <li><a href="#"><i class="zmdi zmdi-search"></i> Find avalible places</a></li>
+      <li class="active"><a href="#"><i class="zmdi zmdi-bookmark"></i> Places I booked</a></li>
+      <li><a href="#"><i class="zmdi zmdi-time"></i> My history</a></li>
+    </ul>
+    <ul class="sy-sidebar--nav">
+      <li><a href="#">Sign out</a></li>
+    </ul>
+  </div>
   
   <div class="sy-container">
     <div class="sy-title">Share for most featured period:</div>
@@ -49,7 +68,7 @@
             </span>
           </label>
         </li>
-        <li class="sy-multiselect-item is-already-booked">
+        <li class="sy-multiselect-item is-already-booked" data-bookaed="">
           <input type="checkbox" id="aug4">
           <label for="aug4">
             <span class="sy-table-cell">
@@ -66,15 +85,14 @@
     <a href="#" class="sy-btn is-block is-huge"><i class="zmdi zmdi-bookmark-outline"></i> Book</a>
   </footer>
 
-  <div class="sy-overlay">
-    <div class="sy-modal">
-      <div class="sy-modal-body">
-        You’ve already booked other parking place on 21 Aug. Would you like to rebook with current place?
-      </div>
-      <div class="sy-modal-footer sy-text-right sy-reset-pt sy-reset-pb">
-        <a href="#" class="sy-btn is-transparent sy-overlay-close">Skip this date</a>
-        <a href="#" class="sy-btn is-transparent is-primary">Rebook</a>
-      </div>
+  <div class="sy-overlay"></div>
+  <div class="sy-modal" data-booked>
+    <div class="sy-modal-body">
+      You’ve already booked other parking place on 21 Aug. Would you like to rebook with current place?
+    </div>
+    <div class="sy-modal-footer sy-text-right sy-reset-pt sy-reset-pb">
+      <a href="#" class="sy-btn is-transparent sy-overlay-close">Skip this date</a>
+      <a href="#" class="sy-btn is-transparent is-primary">Rebook</a>
     </div>
   </div>
 

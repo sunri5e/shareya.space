@@ -13,8 +13,27 @@
 <body>
 
   <header class="sy-header">
-    <a href="#" class="zmdi zmdi-menu sy-header-btn"></a> Share my place
+    <a href="#" class="zmdi zmdi-menu sy-header-btn sy-menu-toogle"></a> Share my place
   </header>
+
+  <div class="sy-sidebar">
+    <div class="sy-sidebar--header">
+      <div class="sy-table">
+        <div class="sy-table-cell">
+          <img src="img/user-avatar.png" width="50" alt="User logo">
+        </div>
+        <div class="sy-table-cell" style="padding-left: 15px;">Oleksandr Hladyshchuk</div>
+      </div>
+    </div>
+    <ul class="sy-sidebar--nav">
+      <li><a href="#"><i class="zmdi zmdi-search"></i> Find avalible places</a></li>
+      <li class="active"><a href="#"><i class="zmdi zmdi-bookmark"></i> Places I booked</a></li>
+      <li><a href="#"><i class="zmdi zmdi-time"></i> My history</a></li>
+    </ul>
+    <ul class="sy-sidebar--nav">
+      <li><a href="#">Sign out</a></li>
+    </ul>
+  </div>
   
   <div class="sy-container">
     <div class="sy-title">Share for most featured period:</div>
@@ -27,6 +46,9 @@
     <div class="sy-title">Or customize sharing period</div>
     <div id="sharing-calendar" class="sy-calendar"></div>
   </div>
+
+  <div class="sy-overlay"></div>
+  
 
 
   <script src="js/jquery-1.11.0.js"></script>

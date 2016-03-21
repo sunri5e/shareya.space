@@ -14,6 +14,27 @@ body
   &.with-footer
     padding-bottom: 68px
 
+
+
+.sy-reset-pt
+  padding-top: 0 !important
+.sy-reset-pb
+  padding-bottom: 0 !important
+
+
+
+.sy-text-right
+  text-align: right
+
+
+
+.sy-table
+  display: table
+.sy-table-cell
+  display: table-cell
+  vertical-align: middle
+
+
 .sy-header
   background-color: $color-accent
   box-shadow: 0 4px 6px rgba(24, 24, 24, 0.35)
@@ -34,6 +55,9 @@ body
   margin-bottom: -10px
   display: inline-block
   color: #FFF
+  &:hover
+    color: #FFF
+    text-decoration: none
 
 
 
@@ -46,18 +70,51 @@ body
   bottom: 0
   width: 290px
   z-index: 3
-
-
-
-.sy-reset-pt
-  padding-top: 0 !important
-.sy-reset-pb
-  padding-bottom: 0 !important
-
-
-
-.sy-text-right
-  text-align: right
+  transform: translate(-110%,0)
+  transition: transform .3s
+  &.is-opened
+    transform: translate(0,0)
+.sy-sidebar--header
+  background: $color-accent
+  padding: 15px
+  font-size: 14px
+  color: rgb(255, 255, 255)
+  line-height: 1.2
+.sy-sidebar--nav
+  margin: 0
+  padding: 0
+  list-style-type: none
+  &:first-of-type
+    margin-top: 15px
+  &:last-of-type
+    margin-bottom: 15px
+  & + &
+    border-top: 1px solid rgba($color-main, .05)
+  & > li
+    & > a
+      font-size: 12px
+      color: rgba($color-main, 0.702)
+      line-height: 28px
+      display: block
+      padding: 15px
+      .zmdi
+        font-size: 24px
+        color: rgba($color-main, 0.502)
+        line-height: 1.2
+        vertical-align: middle
+        width: 20px
+        text-align: center
+        margin-right: 10px
+        display: inline-block
+        margin-top: -3px
+      &:hover
+        text-decoration: none
+    &.active
+      & > a
+        background: rgba($color-main, .05)
+        color: $color-accent
+        .zmdi
+          color: $color-accent
 
 
 
@@ -255,9 +312,13 @@ body
   opacity: 0
   pointer-events: none
   transition: opacity .3s
-  &.is-opened
+  &.is-opened,
+  &.is-opened-for-sidebar
     opacity: 1
     pointer-events: auto
+  &.is-opened-for-sidebar
+    z-index: 2
+    background-color: rgba($color-main, .7)
 
 
 
@@ -358,6 +419,14 @@ body
   transform: translate(-50%, -50%)
   background-color: #FFF
   box-shadow: 0 3px 9px rgba(24, 24, 24, 0.35)
+  opacity: 0
+  pointer-events: none
+  margin-top: -50px
+  transition: opacity .3s, margin-top .3s
+  &.is-opened
+    pointer-events: auto
+    opacity: 1
+    margin-top: 0
 .sy-modal-body,
 .sy-modal-footer
   padding: 10px
