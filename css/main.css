@@ -169,7 +169,8 @@ body {
     margin-left: auto;
     margin-right: auto; }
 
-.ui-datepicker-prev, .ui-datepicker-next {
+.ui-datepicker-prev,
+.ui-datepicker-next {
   padding: 5px 10px;
   color: #25CB82;
   font-size: 24px; }
@@ -190,10 +191,15 @@ body {
 
 .ui-datepicker-calendar th {
   font-weight: 400; }
-.ui-datepicker-calendar th, .ui-datepicker-calendar td {
+
+.ui-datepicker-calendar th,
+.ui-datepicker-calendar td {
   text-align: center;
   padding: 5px; }
-  .ui-datepicker-calendar th > span, .ui-datepicker-calendar th > a, .ui-datepicker-calendar td > span, .ui-datepicker-calendar td > a {
+  .ui-datepicker-calendar th > span,
+  .ui-datepicker-calendar th > a,
+  .ui-datepicker-calendar td > span,
+  .ui-datepicker-calendar td > a {
     display: inline-block;
     width: 40px;
     height: 40px;
@@ -201,7 +207,10 @@ body {
     vertical-align: middle;
     color: rgba(0, 0, 0, 0.5);
     font-size: 12px; }
-    .ui-datepicker-calendar th > span.ui-state-highlight, .ui-datepicker-calendar th > a.ui-state-highlight, .ui-datepicker-calendar td > span.ui-state-highlight, .ui-datepicker-calendar td > a.ui-state-highlight {
+    .ui-datepicker-calendar th > span.ui-state-highlight,
+    .ui-datepicker-calendar th > a.ui-state-highlight,
+    .ui-datepicker-calendar td > span.ui-state-highlight,
+    .ui-datepicker-calendar td > a.ui-state-highlight {
       border-radius: 20px;
       background-color: #25CB82;
       color: #fff;
@@ -210,12 +219,14 @@ body {
 .ui-datepicker-week-end {
   display: none; }
 
-.sy-calendar .ui-state-highlight > span, .sy-calendar .ui-state-highlight > a {
+.sy-calendar .ui-state-highlight > span,
+.sy-calendar .ui-state-highlight > a {
   border-radius: 20px;
   background-color: #25CB82;
   color: #fff;
   font-weight: 700; }
-  .sy-calendar .ui-state-highlight > span.ui-state-highlight, .sy-calendar .ui-state-highlight > a.ui-state-highlight {
+  .sy-calendar .ui-state-highlight > span.ui-state-highlight,
+  .sy-calendar .ui-state-highlight > a.ui-state-highlight {
     background: transparent;
     border: 1px solid #25CB82;
     color: rgba(0, 0, 0, 0.5); }
@@ -229,8 +240,8 @@ body {
   background-color: rgba(0, 0, 0, 0.8);
   opacity: 0;
   pointer-events: none;
-  -webkit-transition: opacity 0.3s;
-          transition: opacity 0.3s; }
+  -webkit-transition: opacity .3s;
+          transition: opacity .3s; }
   .sy-overlay.is-opened {
     opacity: 1;
     pointer-events: auto; }
@@ -242,8 +253,8 @@ body {
   font-size: 12px;
   font-weight: 700;
   padding: 10px;
-  -webkit-transition: background 0.3s;
-          transition: background 0.3s;
+  -webkit-transition: background .3s;
+          transition: background .3s;
   text-align: center; }
   .sy-btn:hover {
     text-decoration: none;
@@ -276,6 +287,7 @@ body {
     background: rgba(37, 203, 130, 0.3); }
     .sy-multiselect-item input[type="checkbox"]:checked + label:before {
       content: '\f269'; }
+
 .sy-multiselect-item label {
   padding: 15px;
   background: #fff;
@@ -298,8 +310,10 @@ body {
     -moz-osx-font-smoothing: grayscale;
     content: '\f26c';
     color: #25CB82; }
+
 .sy-multiselect-item + .sy-multiselect-item {
   margin-top: 10px; }
+
 .sy-multiselect-item.is-already-booked label {
   background: rgba(243, 167, 21, 0.2); }
   .sy-multiselect-item.is-already-booked label:before {
@@ -333,7 +347,8 @@ body {
   background-color: #FFF;
   box-shadow: 0 3px 9px rgba(24, 24, 24, 0.35); }
 
-.sy-modal-body, .sy-modal-footer {
+.sy-modal-body,
+.sy-modal-footer {
   padding: 10px; }
 
 .sy-modal-body {
