@@ -9,5 +9,8 @@
     "gulp-minify-css": "^0.3.11",
     "gulp-notify": "^2.0.0",
     "gulp-sass": "^2.2.0"
+  },
+  "dependencies": {
+    "gulp": "^3.9.0"
   }
 }
