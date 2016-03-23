@@ -13,7 +13,7 @@
 <body>
 
   <header class="sy-header">
-    <a href="#" class="zmdi zmdi-menu sy-header-btn sy-menu-toogle"></a> Share my place
+    <a href="#" class="zmdi zmdi-menu sy-header-btn sy-menu-toogle"></a> Sharing history
   </header>
 
   <div class="sy-sidebar">
@@ -35,26 +35,53 @@
     </ul>
   </div>
   
-  <div class="sy-container">
-    <div class="sy-title">Share for most featured period:</div>
-    <div class="sy-btn-bar">
-      <a href="#" class="sy-btn">Today</a>
-      <a href="#" class="sy-btn">2MRW</a>
-      <a href="#" class="sy-btn">14 Aug</a>
-      <a href="#" class="sy-btn">whole week</a>
-    </div>
-    <div class="sy-title">Or customize sharing period</div>
-    <div id="sharing-calendar" class="sy-calendar">
-      <div class="sy-calendar--bar sy-text-right">
-        <a href="#" class="sy-btn is-huge is-transparent is-primary">Reset</a>
-        <a href="#" class="sy-btn is-huge">Share</a>
-      </div>
-    </div>
-  </div>
+  <ul class="sy-list">
+    <li class="sy-list-item">
+      <a href="cancel_sharing.html">
+        <table>
+          <tr>
+            <td><i class="zmdi zmdi-calendar-check"></i></td>
+            <td class="sy-list-item--data">
+              <div><strong>Shared for 12 days</strong></div>
+              <div>(9 Aug - 17 Aug)</div>
+              <div>(21Aug - 25 Aug)</div>
+            </td>
+            <td><i class="zmdi zmdi-chevron-right"></i></td>
+          </tr>
+        </table>
+      </a>
+    </li>
+    <li class="sy-list-item">
+      <a href="cancel_sharing.html">
+        <table>
+          <tr>
+            <td><i class="zmdi zmdi-calendar-check"></i></td>
+            <td class="sy-list-item--data">
+              <div><strong>Shared for 1 day</strong></div>
+              <div>(Today)</div>
+            </td>
+            <td><i class="zmdi zmdi-chevron-right"></i></td>
+          </tr>
+        </table>
+      </a>
+    </li>
+    <li class="sy-list-item is-disabled">
+      <a href="cancel_sharing.html">
+        <table>
+          <tr>
+            <td><i class="zmdi zmdi-calendar-close"></i></td>
+            <td class="sy-list-item--data">
+              <div><strong>12 days available.</strong></div>
+              <div>(today - 17 Aug)</div>
+            </td>
+            <td><i class="zmdi zmdi-chevron-right"></i></td>
+          </tr>
+        </table>
+      </a>
+    </li>
+  </ul>
 
   <div class="sy-overlay"></div>
-  
-
 
   <script src="js/jquery-1.11.0.js"></script>
   <script src="//code.jquery.com/ui/1.11.4/jquery-ui.js"></script>

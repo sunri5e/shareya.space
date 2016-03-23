@@ -78,4 +78,8 @@ $(document).ready(function() {
     if ($('.sy-sidebar').toggleClass('is-opened'));
     custAddClass('.sy-overlay', 'is-opened-for-sidebar');
   });
+
+  $("[data-checkall]").change(function () {
+      $('#' + $(this).data('related') + ' input:checkbox').prop('checked', $(this).prop("checked"));
+  });
 });

@@ -49,12 +49,14 @@ body
   top: 0
   left: 0
 .sy-header-btn
-  font-size: 18px
   padding: 10px 15px
   margin-top: -10px
   margin-bottom: -10px
   display: inline-block
   color: #FFF
+  &.zmdi,
+  .zmdi
+    font-size: 18px
   &:hover
     color: #FFF
     text-decoration: none
@@ -119,8 +121,8 @@ body
 
 
 .sy-container
-  padding-left: 10px
-  padding-right: 10px
+  padding-left: 15px
+  padding-right: 15px
 .sy-title
   padding: 15px 0
   color: rgba($color-main, .5)
@@ -159,8 +161,13 @@ body
     font-weight: 700
   table
     width: 100%
-    td
-      vertical-align: top
+  td
+    vertical-align: top
+    &:first-child
+      .zmdi
+        color: $color-accent
+      &:not(.sy-list-item--title)
+        padding-right: 20px
   .sy-list-item--title
     padding-right: 50px
     color: $color-accent
@@ -171,6 +178,14 @@ body
   .zmdi
     color: rgba($color-main, .5)
     font-size: 18px
+  &.is-disabled
+    strong
+      color: rgba($color-main, .5)
+    td
+      &:first-child
+        color: rgba($color-main, .3)
+        .zmdi
+          color: rgba($color-main, .3)
 
 
 
@@ -280,6 +295,8 @@ body
       vertical-align: middle
       color: rgba($color-main, .5)
       font-size: 12px
+      &:hover
+        text-decoration: none
       &.ui-state-highlight
         border-radius: 20px
         background-color: $color-accent
@@ -288,6 +305,7 @@ body
 .ui-datepicker-week-end
   display: none
 .sy-calendar
+  position: relative
   .ui-state-highlight
     & > span,
     & > a,
@@ -299,6 +317,12 @@ body
         background: transparent
         border: 1px solid $color-accent
         color: rgba($color-main, .5)
+  .sy-calendar--bar
+    position: absolute
+    right: 20px
+    bottom: 20px
+    & ~ .ui-datepicker
+      padding-bottom: 88px
 
 
 
@@ -348,9 +372,10 @@ body
     font-size: 14px
     font-weight: 400
     padding: 12px 15px
-    border-radius: 3px
+    // border-radius: 3px
     line-height: 24px
     height: 48px
+    min-width: 100px
     .zmdi
       font-size: 24px
       vertical-align: middle
@@ -365,6 +390,11 @@ body
       background: rgba($color-accent, .3)
       &:before
         content: '\f269'
+    &[data-checkall] + label
+      background: transparent
+      .sy-multiselect-item--title
+        font-size: 12px
+        padding-top: 2px
   label
     padding: 15px
     background: #fff
