@@ -439,6 +439,39 @@ body {
   font-size: 12px;
   font-weight: 400; }
 
+.sy-toggle {
+  position: relative; }
+  .sy-toggle:after, .sy-toggle:before {
+    display: block;
+    content: '';
+    position: absolute;
+    top: 50%;
+    -webkit-transform: translate(0, -50%);
+        -ms-transform: translate(0, -50%);
+            transform: translate(0, -50%); }
+  .sy-toggle:before {
+    background-color: #ebebeb;
+    width: 30px;
+    height: 10px;
+    border-radius: 5px;
+    right: 15px;
+    -webkit-transition: background-color .3s;
+            transition: background-color .3s; }
+  .sy-toggle:after {
+    border-radius: 50%;
+    background-color: #F9F9F9;
+    box-shadow: 0 0 3px 0px rgba(24, 24, 24, 0.35);
+    width: 16px;
+    height: 16px;
+    right: 29px;
+    -webkit-transition: right .3s, background-color .3s;
+            transition: right .3s, background-color .3s; }
+  .sy-toggle.is-on:before {
+    background-color: rgba(37, 203, 130, 0.5); }
+  .sy-toggle.is-on:after {
+    right: 15px;
+    background-color: #25CB82; }
+
 .sy-modal {
   position: fixed;
   top: 50%;

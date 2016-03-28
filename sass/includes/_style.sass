@@ -441,6 +441,39 @@ body
 
 
 
+.sy-toggle
+  position: relative
+  &:after,
+  &:before
+    display: block
+    content: ''
+    position: absolute
+    top: 50%
+    transform: translate(0,-50%)
+  &:before
+    background-color: #ebebeb
+    width: 30px
+    height: 10px
+    border-radius: 5px
+    right: 15px
+    transition: background-color .3s
+  &:after
+    border-radius: 50%
+    background-color: #F9F9F9
+    box-shadow: 0 0 3px 0px rgba(24, 24, 24, 0.35)
+    width: 16px
+    height: 16px
+    right: 29px
+    transition: right .3s, background-color .3s
+  &.is-on
+    &:before
+      background-color: rgba($color-accent, .5)
+    &:after
+      right: 15px
+      background-color: $color-accent
+
+
+
 .sy-modal
   position: fixed
   top: 50%

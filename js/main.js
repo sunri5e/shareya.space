@@ -82,4 +82,9 @@ $(document).ready(function() {
   $("[data-checkall]").change(function () {
       $('#' + $(this).data('related') + ' input:checkbox').prop('checked', $(this).prop("checked"));
   });
+
+  $('.sy-toggle').on('click', function(e){
+    e.preventDefault();
+    $(this).toggleClass('is-on');
+  });
 });
