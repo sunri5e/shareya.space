@@ -508,3 +508,11 @@ body {
   left: 0;
   bottom: 0;
   padding: 10px; }
+
+.sy-place-active rect {
+  fill: #25CB82;
+  opacity: 1; }
+
+.sy-place-active text {
+  fill: #fff;
+  opacity: 1; }
